@@ -31,11 +31,11 @@ RUN bash -c "rm /bin/sh && ln -s /bin/bash /bin/sh"
 # Install slackpost
 RUN ln -s /app/bin/slackpost /bin/slackpost
 
+RUN bash -c "/app/setup/python"
+
 USER jenkins-slave
 
 # Install ruby and node with external script
 RUN bash -c "/app/setup/ruby"
 
 RUN bash -c "/app/setup/node"
-
-RUN bash -c "/app/setup/python"
