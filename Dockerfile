@@ -35,6 +35,10 @@ RUN ln -s /app/bin/slackpost /bin/slackpost
 
 RUN bash -c "/app/setup/python"
 
+RUN adduser jenkins-slave sudo
+
+RUN echo "%sudo ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
 USER jenkins-slave
 
 # Install ruby and node with external script
