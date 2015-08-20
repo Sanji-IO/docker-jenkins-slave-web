@@ -18,6 +18,7 @@ RUN dpkg --add-architecture i386 && \
     libreadline-dev \
     debhelper \
     fakeroot \
+    sudo \
     git \
     qemu-user \
     curl && \
