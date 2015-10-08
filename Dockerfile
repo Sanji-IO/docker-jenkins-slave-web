@@ -45,6 +45,6 @@ USER jenkins-slave
 # Install ruby and node with external script
 RUN bash -c "/app/setup/ruby"
 
-ENV NODE_INSTALL_VERSION v4.0.0
+ENV NODE_INSTALL_VERSION v4.1.2
 
 RUN bash -c "/app/setup/node"
