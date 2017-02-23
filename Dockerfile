@@ -18,6 +18,7 @@ RUN dpkg --add-architecture i386 && \
     libreadline-dev \
     debhelper \
     dh-make \
+    dh-systemd \
     fakeroot \
     sudo \
     git \
