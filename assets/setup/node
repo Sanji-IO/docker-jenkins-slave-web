@@ -10,5 +10,4 @@ nvm use $NODE_INSTALL_VERSION
 nvm alias default $NODE_INSTALL_VERSION
 
 # Install node global module
-npm i -g npm@next
 npm i -g grunt-cli bower
